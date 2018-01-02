@@ -4,8 +4,8 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start":"node buildingScripts/srcServer.js"
+    "test": "mocha --reporter process buildScripts/testsetup.js \"src/**/*.test.js\"",
+    "start": "node buildingScripts/srcServer.js"
   },
   "repository": {
     "type": "git",
@@ -52,5 +52,20 @@
     "webpack-dev-middleware": "1.8.4",
     "webpack-hot-middleware": "2.13.0",
     "webpack-md5-hash": "0.0.5"
+  },
+  "dependencies": {
+    "bower": "^1.8.2",
+    "cluster": "^0.7.7",
+    "express-handlebars": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-jscs": "^4.0.0",
+    "gulp-jshint": "^2.0.4",
+    "http": "0.0.0",
+    "jade": "^1.11.0",
+    "jshint-stylish": "^2.2.1",
+    "mocka": "0.0.1",
+    "mongodb": "^3.0.1",
+    "mssql": "^4.1.0",
+    "should": "^13.1.3"
   }
 }
