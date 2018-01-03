@@ -1,5 +1,5 @@
-import path from 'path';
-import HtmlWebpackPlugin from 'html-webpack-plugin';
+var path = require('path');
+var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 export default {
   debug: true,
